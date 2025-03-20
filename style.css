@@ -1,0 +1,114 @@
+body {
+    font-family: cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background: #00000000;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  .hero {
+    background-color: #000000;
+    background-image: url('https://zastavki.gas-kvas.com/uploads/posts/2024-09/zastavki-gas-kvas-com-kqku-p-zastavki-na-rabochii-stol-garri-potter-13.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: url('https://zastavki.gas-kvas.com/uploads/posts/2024-09/zastavki-gas-kvas-com-kqku-p-zastavki-na-rabochii-stol-garri-potter-13.jpg')
+      no-repeat center center/cover;*/
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+  }
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .hero .cta {
+    margin: 20px auto;
+    padding: 15px 30px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .hero .cta:hover {
+    background: #cc7a00;
+  }
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  footer {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  .services {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding-left: 0;
+  }
+  .services li {
+    background: lightblue;
+    padding: 16px;
+    width: 33%;
+  }
+  .services li img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto 16px auto;
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 640px) {
+    header h1 {
+      font-size: 16px;
+    }
+  
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 48px;
+    }
+  
+    .services {
+      flex-direction: column;
+    }
+    .services li {
+      width: 100%;
+    }
+  }
+  
+  /* Tablet */
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .services {
+      flex-wrap: wrap;
+    }
+    .services li {
+      width: 48%;
+    }
+  }
+  
+  /*  < 640 mobile, < 1024 tablet, >> desktop/laptop  */
